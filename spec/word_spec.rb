@@ -65,22 +65,23 @@ describe '#Word' do
     it("deletes a word by id") do
       word = Word.new("Spider", nil)
       word.save()
-      word2 = Word.new("Cat", nil)
+      word2 = Word.new("Hat", nil)
       word2.save()
       word.delete()
       expect(Word.all).to(eq([word2]))
     end
   end
 
-  describe('#definitions') do
-    it("returns a words' definitions") do
-      word = Word.new("Pizza", nil)
-      word.save()
-      definition = Definition.new("Party", word.id, nil)
-      definition.save()
-      definition2 = Definition.new("Turtles", word.id, nil)
-      definition2.save()
-      expect(word.definitions).to(eq([definition, definition2]))
-    end
-  end
+  # describe('#definitions') do
+  #   it("returns a words' definitions") do
+  #     word = Word.new("Pizza Party", nil)
+  #     word.save()
+  #     definition = Definition.new("Party", word.id, nil)
+  #     definition.save()
+  #     definition2 = Definition.new("Turtles Yeah", word.id, nil)
+  #     definition2.save()
+  #     expect(word.definitions).to(eq([definition, definition2]))
+  #   end
+  # end
+
 end

@@ -90,4 +90,13 @@ describe '#Definition' do
       expect(Definition.find_by_word(word2.id)).to(eq([definition2]))
     end
   end
+
+  describe('#word') do
+  it("finds the word a definition belongs to") do
+    definition = Definition.new("Crab", @word.id, nil)
+    definition.save()
+    expect(definition.word()).to(eq(@word))
+  end
+end
+
 end
