@@ -1,5 +1,5 @@
 class Word
-  attr_reader :id, name
+  attr_reader :id, :name
   @@words = {}
   @@total_rows = 0
 
@@ -14,5 +14,9 @@ class Word
 
   def save
     @@words[self.id] = Word.new(self.name, self.id)
+  end
+
+  def ==(word_to_compare)
+    self.name() == word_to_compare.name()
   end
 end
