@@ -37,8 +37,15 @@ get('/words/:id/edit') do
 end
 
 patch('/words/:id') do
-  @word = Words.find(params[:id].to_i())
+  @word = Word.find(params[:id].to_i())
   @word.update(params[:name])
+  @words = Word.all
+  erb(:words)
+end
+
+delete('/words/:id') do
+  @word = Word.find(params[:id].to_i())
+  @word.delete()
   @words = Word.all
   erb(:words)
 end
