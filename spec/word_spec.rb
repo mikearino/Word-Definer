@@ -40,4 +40,34 @@ describe '#Word' do
       expect(Word.all).to(eq([]))
     end
   end
+
+  describe('.find') do
+    it("finds a word by id") do
+      word = Word.new("Car", nil)
+      word.save()
+      word2 = Word.new("Hat", nil)
+      word2.save()
+      expect(Word.find(word.id)).to(eq(word))
+    end
+  end
+
+  describe('#update') do
+    it("updates an word by id") do
+      word = Word.new("Cool", nil)
+      word.save()
+      word.update("Awesome")
+      expect(word.name).to(eq("Awesome"))
+    end
+  end
+
+  describe('#delete') do
+    it("deletes a word by id") do
+      word = Word.new("Spider", nil)
+      word.save()
+      word2 = Word.new("Cat", nil)
+      word2.save()
+      word.delete()
+      expect(Word.all).to(eq([word2]))
+    end
+  end
 end
