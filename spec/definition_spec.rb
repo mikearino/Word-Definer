@@ -92,11 +92,11 @@ describe '#Definition' do
   end
 
   describe('#word') do
-  it("finds the word a definition belongs to") do
-    definition = Definition.new("Crab", @word.id, nil)
-    definition.save()
-    expect(definition.word()).to(eq(@word))
+    it("finds the word a definition belongs to") do
+      definition = Definition.new("Crab", @word.id, nil)
+      definition.save()
+      expect(definition.word()).to(eq(@word))
+    end
   end
-end
 
 end
