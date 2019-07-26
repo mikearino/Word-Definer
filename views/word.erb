@@ -1,9 +1,4 @@
 <h4>Word Name: <%= @word.name %></h4>
 
-<% @words.each do |word| %>
-  <li><a href="/words/<%= word.id %>"><%= word.name%></a></li>
-
-  <% end %>
-
-<p><a href="/words/<%= @word.id%>/edit"></a>Edit word</p>
-<a href="/words">Return to word list</a>
+  <p><a href="/words/<%= @word.id %>/edit">Edit word</a></p>
+  <a href="/words">Return to word list</a>
