@@ -2,12 +2,11 @@
 
 #### A program for kids to learn the definition of words.
 
-#### By **Mike Lofgren**
+#### By **Mike Lofgren**   https://evening-refuge-94992.herokuapp.com/
 
 ## Description
 
-A program created with Ruby and Sinatra for kids to add and update the definitions of words.
-A user inputs words and definitions, in to a database.
+A program created for kids to add and update the definitions of words. A user inputs words and definitions in to a database, where they can edit rename or delete words and definitions.
 
 ### Specs
 | Spec                                    | Input                            | Output                                    |
@@ -28,20 +27,16 @@ A user inputs words and definitions, in to a database.
 
 ## Setup/Installation Requirements
 
-1. To run this program, clone repository from this GitHub.
-2. Open the terminal. If you can't find it do a local search on your computer.
-3. Type in "cd desktop" in terminal. Hit enter.
-4. Type in "cd anagram_checker/" in terminal. Hit enter.
-5. Type in "ruby anagram_checker_script.rb" in terminal. Hit enter.
-6. Type in first phrase. Hit enter.
-7. Type in second phrase. Hit enter.
-8. The program will tell you if the word/phrases is an anagram or antigram.
+1. To run this program, open a web browser.
+2. Go to https://evening-refuge-94992.herokuapp.com/..
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
   * Ruby
+  * Sinatra
+  * Heroku
 
 ## Support and contact details
 
