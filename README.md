@@ -12,12 +12,18 @@ A user inputs words and definitions, in to a database.
 ### Specs
 | Spec                                    | Input                            | Output                                    |
 | :---------------------------------------| :------------------------------- | :---------------------------------------- |
-| The user clicks add new word  |      click on link                        | "Add a new word in to the "                                     |
-| The user inputs ct for the first word      | ct                             |"Please enter valid words"                             |
-| The user inputs cat for the first word and tar for second word    | cat, tar                              |"This is not an anagram"                            |
-| The user inputs cat for the first word and tac for second word    | cat, tac                              |"This is an anagram"                            |
-|  The user inputs tree for the first word and pop for second word            | tree, pop                             |"This is an antigram"                             |
-| The user inputs cat mad for the first phrase and tac dam for the second phrase    | cat mad, tac dam                             |"This is an anagram"                            |
+| The user clicks add new word  |      Click on link                        | A new view shows to input word                                     |
+| The user inputs a word       | Cat                             |Available words "cat"                            |
+| The user can click on the word cat    | Clicks on "cat"                             |Add a definition/ edit word                         |
+| The user can click edit word    | Clicks on edit word                             |Update /rename word                        |
+| The user can click edit definition    | Clicks on definition link                             |Update definition/delete definition                     |
+| The user can click delete definition    | Clicks on delete button                             |Definition deleted                     |
+| The user can rename the word    | Types in dog                             |Returns to home screen with available word as dog                        |
+| The user can click delete    | Clicks delete word                            |Returns to home screen with word deleted                       |
+| The user inputs a definition for cat    | Feline                              |It displays feline animal in a list                          |
+|  The user clicks on the definition for feline animal           | Clicks on feline                              |Update screen appears                             |
+| The user inputs new definition    | Furry                             |Returns to definition screen for cat                          |
+
 
 
 ## Setup/Installation Requirements
